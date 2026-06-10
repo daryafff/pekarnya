@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Пекарня «Бриошь»</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Пекарня<span>«Бриошь»</span></a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="menu.html">Меню</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <button class="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Контакты</h1>
+    <p>Всегда рады видеть вас в гостях или услышать ваш отзыв</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info fade-in">
+        <h2>Как нас найти</h2>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Адрес</h4>
+            <p>г. Москва, ул. Пушкина, д. 12<br>м. Тверская, выход №3</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Телефон</h4>
+            <p>+7 (495) 123-45-67<br>+7 (926) 765-43-21</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p>hello@briosh.ru</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <h4>Режим работы</h4>
+            <p>Пн–Вс: 8:00 — 22:00<br>Без выходных</p>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 24px;">Напишите нам</h3>
+
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" required placeholder="Иван">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Тема</label>
+          <select id="topic" name="topic">
+            <option>Вопрос о меню</option>
+            <option>Заказ и доставка</option>
+            <option>Сотрудничество</option>
+            <option>Предложение / жалоба</option>
+            <option>Другое</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" required placeholder="Ваше сообщение..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Отправить →</button>
+      </form>
+
+    </div>
+    <div style="margin-top: 60px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0bc4c500aa903bc2e4a2979c85a34f7838360769fd1cff666d515bc014fcce67&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Пекарня «Бриошь»</h3>
+        <p>Свежая выпечка каждый день с 8:00 до 22:00. Работаем без выходных.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ещё</h3>
+        <ul class="footer-links">
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul class="footer-links">
+          <li>ул. Пушкина, 12</li>
+          <li>+7 (495) 123-45-67</li>
+          <li>hello@briosh.ru</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Пекарня «Бриошь». Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

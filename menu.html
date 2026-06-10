@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Меню — Пекарня «Бриошь»</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Пекарня<span>«Бриошь»</span></a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="menu.html">Меню</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <button class="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Наше меню</h1>
+    <p>Всё, что мы печём с любовью и из лучших продуктов</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="menu-tabs fade-in">
+      <button class="menu-tab active" data-filter="all">Всё</button>
+      <button class="menu-tab" data-filter="bread">Хлеб</button>
+      <button class="menu-tab" data-filter="croissant">Круассаны</button>
+      <button class="menu-tab" data-filter="dessert">Десерты</button>
+      <button class="menu-tab" data-filter="drink">Напитки</button>
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-item fade-in" data-category="croissant">
+        <img class="menu-item-img" src="croissant.jpg" alt="Круассан классический">
+        <div class="menu-item-info">
+          <h3>Круассан классический</h3>
+          <p class="desc">Слоёное тесто с маслом 82%, хрустящая корочка</p>
+          <span class="price">190 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="croissant">
+        <img class="menu-item-img" src="almond.jpg" alt="Круассан с миндалём">
+        <div class="menu-item-info">
+          <h3>Круассан с миндалём</h3>
+          <p class="desc">Миндальный крем, лепестки миндаля, сахарная пудра</p>
+          <span class="price">290 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="croissant">
+        <img class="menu-item-img" src="choco-croissant.jpg" alt="Круассан с шоколадом">
+        <div class="menu-item-info">
+          <h3>Круассан с шоколадом</h3>
+          <p class="desc">Тёмный бельгийский шоколад внутри слоёного теста</p>
+          <span class="price">260 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="bread">
+        <img class="menu-item-img" src="bread.jpg" alt="Ржаной хлеб на закваске">
+        <div class="menu-item-info">
+          <h3>Ржаной хлеб на закваске</h3>
+          <p class="desc">Цельнозерновая ржаная мука, тмин, натуральная закваска</p>
+          <span class="price">280 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="bread">
+        <img class="menu-item-img" src="baguette.jpg" alt="Багет французский">
+        <div class="menu-item-info">
+          <h3>Багет французский</h3>
+          <p class="desc">Хрустящая корочка, пористый мякиш, классический рецепт</p>
+          <span class="price">150 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="bread">
+        <img class="menu-item-img" src="ciabatta.jpg" alt="Чиабатта с оливками">
+        <div class="menu-item-info">
+          <h3>Чиабатта с оливками</h3>
+          <p class="desc">Итальянский хлеб с оливками и розмарином</p>
+          <span class="price">220 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="dessert">
+        <img class="menu-item-img" src="tart.jpg" alt="Яблочный тарт">
+        <div class="menu-item-info">
+          <h3>Яблочный тарт</h3>
+          <p class="desc">Карамелизированные яблоки, песочное тесто, ванильный крем</p>
+          <span class="price">350 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="dessert">
+        <img class="menu-item-img" src="cookie.jpg" alt="Шоколадное печенье">
+        <div class="menu-item-info">
+          <h3>Шоколадное печенье</h3>
+          <p class="desc">С кусочками бельгийского шоколада и морской солью</p>
+          <span class="price">120 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="dessert">
+        <img class="menu-item-img" src="tiramisu.jpg" alt="Тирамису">
+        <div class="menu-item-info">
+          <h3>Тирамису</h3>
+          <p class="desc">Классический итальянский десерт с маскарпоне</p>
+          <span class="price">380 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="drink">
+        <img class="menu-item-img" src="cappuccino.jpg" alt="Капучино">
+        <div class="menu-item-info">
+          <h3>Капучино</h3>
+          <p class="desc">Эспрессо с нежной молочной пенкой</p>
+          <span class="price">250 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="drink">
+        <img class="menu-item-img" src="latte.jpg" alt="Латте с корицей">
+        <div class="menu-item-info">
+          <h3>Латте с корицей</h3>
+          <p class="desc">Молочный кофе с корицей и ванильным сиропом</p>
+          <span class="price">280 ₽</span>
+        </div>
+      </div>
+
+      <div class="menu-item fade-in" data-category="drink">
+        <img class="menu-item-img" src="emonade.jpg" alt="Лимонад домашний">
+        <div class="menu-item-info">
+          <h3>Лимонад домашний</h3>
+          <p class="desc">Свежевыжатый лимон, мята, минеральная вода</p>
+          <span class="price">200 ₽</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Пекарня «Бриошь»</h3>
+        <p>Свежая выпечка каждый день с 8:00 до 22:00. Работаем без выходных.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="menu.html">Меню</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ещё</h3>
+        <ul class="footer-links">
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul class="footer-links">
+          <li>ул. Пушкина, 12</li>
+          <li>+7 (495) 123-45-67</li>
+          <li>hello@briosh.ru</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Пекарня «Бриошь». Все права защищены.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
